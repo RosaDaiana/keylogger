@@ -1,0 +1,12 @@
+D:\Programacion\Proyectos\keylogger\keylogger-prueba\prueba\prueba\bin\Debug\prueba.exe.config
+D:\Programacion\Proyectos\keylogger\keylogger-prueba\prueba\prueba\bin\Debug\prueba.exe
+D:\Programacion\Proyectos\keylogger\keylogger-prueba\prueba\prueba\bin\Debug\prueba.pdb
+D:\Programacion\Proyectos\keylogger\keylogger-prueba\prueba\prueba\bin\Debug\prueba.xml
+D:\Programacion\Proyectos\keylogger\keylogger-prueba\prueba\prueba\obj\Debug\prueba.vbproj.AssemblyReference.cache
+D:\Programacion\Proyectos\keylogger\keylogger-prueba\prueba\prueba\obj\Debug\prueba.Form1.resources
+D:\Programacion\Proyectos\keylogger\keylogger-prueba\prueba\prueba\obj\Debug\prueba.Resources.resources
+D:\Programacion\Proyectos\keylogger\keylogger-prueba\prueba\prueba\obj\Debug\prueba.vbproj.GenerateResource.cache
+D:\Programacion\Proyectos\keylogger\keylogger-prueba\prueba\prueba\obj\Debug\prueba.vbproj.CoreCompileInputs.cache
+D:\Programacion\Proyectos\keylogger\keylogger-prueba\prueba\prueba\obj\Debug\prueba.exe
+D:\Programacion\Proyectos\keylogger\keylogger-prueba\prueba\prueba\obj\Debug\prueba.xml
+D:\Programacion\Proyectos\keylogger\keylogger-prueba\prueba\prueba\obj\Debug\prueba.pdb
